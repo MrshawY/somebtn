@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一些按钮</title>
+</head>
+  <style type="text/css">
+  body{
+     display: flex;
+     justify-content:space-around;
+
+  }
+    .btn{
+       width: 100px;
+       height: 50px;
+       text-align:center;
+       line-height: 50px;
+       float: left;
+       transition: all .2s;
+       box-shadow: 0px 0px 0px 0px rgba(209, 243, 17, 0.089) inset;
+    }
+    .fill_in{
+        border: 2px solid rgb(198, 17, 243);
+        color: rgb(198, 17, 243);
+    }
+    .fill_in:hover{
+      box-shadow: 0px 0px 0px 30px rgb(198, 17, 243) inset;
+      color: white;
+    }
+
+    .close{
+        border: 2px solid rgb(203, 216, 22);
+        color: rgb(203, 216, 22);
+    }
+    .close:hover{
+      box-shadow: 50px 0px 0px 0px rgb(203, 216, 22) inset,-50px 0px 0px 0px rgb(203, 216, 22) inset;
+      color: white;
+    }
+    .Raise{
+      border: 2px solid rgb(22, 216, 32);
+      color:rgb(22, 216, 32);
+    }
+    .Raise:hover{
+      transform: translateY(-2px);
+      box-shadow: 0px 8px 2px -3px rgb(22, 216, 32);
+    }
+    .fill_up{
+      border: 2px solid rgb(154, 213, 236);
+      color:rgb(154, 213, 236);
+    }
+    .fill_up:hover{
+      box-shadow: 0px -50px 0px 0px rgb(154, 213, 236) inset;
+      color: white;
+    }
+
+    .Slide{
+        border: 2px solid rgb(203, 216, 22);
+        color: rgb(203, 216, 22);
+    }
+    .Slide:hover{
+      box-shadow: 100px 0px 0px 0px rgb(203, 216, 22) inset;
+      color: white;
+    }
+    .Offset{
+      box-shadow:5px 5px 0px 0px rgb(22, 155, 216) inset, 5px 5px 0px 1px rgb(22, 155, 216); 
+    }
+    .Offset:hover{
+      box-shadow: 100px 50px 0px 0px rgb(22, 155, 216) inset;
+    }
+    .pulse{
+      border: 2px solid rgb(93, 216, 22);
+    }
+    @keyframes go{
+      0%{
+        box-shadow: 0px 0px 0px 0px  rgb(216, 180, 22,1);
+      }
+      100%{
+        box-shadow: 0px 0px 0px 30px rgb(216, 180, 22,0);
+      }
+    }
+    .pulse:hover{
+      color: rgb(216, 180, 22);
+      border: 2px solid rgb(216, 180, 22);
+      animation: go .4s;
+      animation-iteration-count: infinite
+    }
+
+  </style>
+<body>
+  <div class="btn fill_in">fill in</div>
+  <div class="btn pulse">Pulse </div>
+  <div class="btn close">Close </div>
+  <div class="btn Raise">Raise </div>
+  <div class="btn fill_up">fill up</div>
+  <div class="btn Slide">Slide</div>
+  <div class="btn Offset">Offset</div>
+</body>
+</html>
